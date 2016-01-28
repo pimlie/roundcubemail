@@ -1228,7 +1228,7 @@ function rcube_webmail()
           location.href = this.secure_url(location.href.replace(/_frame=/, '_download='));
         }
         else if (uid = this.get_single_uid()) {
-          this.goto_url('viewsource', this.params_from_uid(uid, {_save: 1}));
+          this.goto_url('viewsource', this.params_from_uid(uid, {_save: 1}), false, true);
         }
         break;
 
